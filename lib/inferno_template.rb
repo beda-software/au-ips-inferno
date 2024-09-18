@@ -1,4 +1,5 @@
 require 'ips_test_kit'
+require 'ipa_test_kit'
 
 module InfernoTemplate
   class Suite < Inferno::TestSuite
@@ -31,6 +32,7 @@ module InfernoTemplate
       end
     end
 
+    group from: :ipa_v100_smart_launch
     group from: :ips_resource_validation
     group do
       title 'IPS Server Operations for Generating IPS Bundles Tests'
