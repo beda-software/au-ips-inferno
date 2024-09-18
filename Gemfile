@@ -6,4 +6,5 @@ gemspec
 
 group :development, :test do
   gem 'debug'
+  gem 'ips_test_kit', git: 'https://github.com/inferno-framework/ips-test-kit'
 end

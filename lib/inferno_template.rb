@@ -1,9 +1,9 @@
-require_relative 'inferno_template/patient_group'
+require 'ips_test_kit'
 
 module InfernoTemplate
   class Suite < Inferno::TestSuite
-    id :inferno_template_test_suite
-    title 'Inferno Template Test Suite'
+    id :au_ips_inferno
+    title 'AU IPS Inferno Test Suite'
     description 'Inferno template test suite.'
 
     # These inputs will be available to all tests in this suite
@@ -31,28 +31,6 @@ module InfernoTemplate
       end
     end
 
-    # Tests and TestGroups can be defined inline
-    group do
-      id :capability_statement
-      title 'Capability Statement'
-      description 'Verify that the server has a CapabilityStatement'
-
-      test do
-        id :capability_statement_read
-        title 'Read CapabilityStatement'
-        description 'Read CapabilityStatement from /metadata endpoint'
-
-        run do
-          fhir_get_capability_statement
-
-          assert_response_status(200)
-          assert_resource_type(:capability_statement)
-        end
-      end
-    end
-
-    # Tests and TestGroups can be written in separate files and then included
-    # using their id
-    group from: :patient_group
+    group from: :ips_resource_validation
   end
 end

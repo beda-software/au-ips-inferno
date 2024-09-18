@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/inferno-framework/ips-test-kit
+  revision: 3cc9f0f0420a739ddb6f520c1f6bf9f46a977608
+  specs:
+    ips_test_kit (0.10.1)
+      inferno_core (>= 0.4.37)
+
 PATH
   remote: .
   specs:
@@ -305,6 +312,7 @@ DEPENDENCIES
   debug
   factory_bot (~> 6.1)
   inferno_template!
+  ips_test_kit!
   rspec (~> 3.10)
   webmock (~> 3.11)
 
