@@ -32,5 +32,26 @@ module InfernoTemplate
     end
 
     group from: :ips_resource_validation
+    group do
+      title 'IPS Server Operations for Generating IPS Bundles Tests'
+      short_title 'IPS Operation Tests'
+      description %(
+        This group evaluates the ability of systems to provide a standard FHIR
+        API for generating and communicating an IPS Bundle as described in the
+        [IPS Data Generation and Inclusion Guidance](http://hl7.org/fhir/uv/ips/STU1.1/ipsGeneration.html).
+
+        Please note that the DocRef tests are currently of limited scope.
+      )
+
+
+      input :url, title: 'IPS FHIR Server Base URL'
+
+      fhir_client do
+        url :url
+      end
+
+      group from: :ips_summary_operation
+      group from: :ips_docref_operation
+    end
   end
 end
