@@ -17,7 +17,7 @@ GIT
 PATH
   remote: .
   specs:
-    inferno_template (0.0.1)
+    au_ips_inferno (0.0.1)
       inferno_core (~> 0.4.38)
 
 GEM
@@ -332,10 +332,10 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  au_ips_inferno!
   database_cleaner-sequel (~> 1.8)
   debug
   factory_bot (~> 6.1)
-  inferno_template!
   ipa_test_kit!
   ips_test_kit!
   rspec (~> 3.10)
