@@ -1,23 +1,4 @@
-# Inferno Template Test Kit
-
-Inferno template [Inferno](https://github.com/inferno-community/inferno-core) Test Kit
-for FHIR testing.
-
-## Instructions for Developing Your Test Kit
-
-Refer to the Inferno documentation for information about [setting up
-your development environment and running your Test Kit](https://inferno-framework.github.io/docs/getting-started/).
-
-More information about what is included in this repository can be [found here](https://inferno-framework.github.io/docs/getting-started/repo-layout-and-organization.html).
-
-## Documentation
-- [Inferno documentation](https://inferno-framework.github.io/docs/)
-- [Ruby API documentation](https://inferno-framework.github.io/inferno-core/docs/)
-- [JSON API documentation](https://inferno-framework.github.io/inferno-core/api-docs/)
-
-## Example Inferno Test Kits
-
-A list of all Test Kits registered with the Inferno Team can be found on the [Test Kit Registry](https://inferno-framework.github.io/community/test-kits.html) page.
+# AU IPS Inferno Test Kit
 
 ## License
 Copyright 2024 TODO
