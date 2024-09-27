@@ -1,5 +1,6 @@
 require 'ips_test_kit'
 require 'ipa_test_kit'
+require_relative 'inferno_template/summary_operation_group'
 
 module InfernoTemplate
   class Suite < Inferno::TestSuite
@@ -22,14 +23,8 @@ module InfernoTemplate
       oauth_credentials :credentials
     end
 
-    # All FHIR validation requsets will use this FHIR validator
     fhir_resource_validator do
-      # igs 'identifier#version' # Use this method for published IGs/versions
-      # igs 'igs/filename.tgz'   # Use this otherwise
-
-      exclude_message do |message|
-        message.message.match?(/\A\S+: \S+: URL value '.*' does not resolve/)
-      end
+      igs 'hl7.fhir.uv.ips#1.1.0'
     end
 
     group from: :ipa_v100_smart_launch
@@ -52,8 +47,7 @@ module InfernoTemplate
         url :url
       end
 
-      group from: :ips_summary_operation
-      group from: :ips_docref_operation
+      group from: :ips_summary_group
     end
   end
 end

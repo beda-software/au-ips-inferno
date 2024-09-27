@@ -1,4 +1,12 @@
 GIT
+  remote: https://github.com/beda-software/ips-test-kit
+  revision: c84ae59395c36422364cdf733b4e24f5b64a5670
+  ref: c84ae59395c36422364cdf733b4e24f5b64a5670
+  specs:
+    ips_test_kit (0.10.1)
+      inferno_core (>= 0.4.37)
+
+GIT
   remote: https://github.com/inferno-framework/ipa-test-kit
   revision: af4c5cc2d295807e4045df8bb2f2cb1940e9953f
   specs:
@@ -6,13 +14,6 @@ GIT
       inferno_core (>= 0.4.37)
       smart_app_launch_test_kit (~> 0.3)
       tls_test_kit (~> 0.2.0)
-
-GIT
-  remote: https://github.com/inferno-framework/ips-test-kit
-  revision: 3cc9f0f0420a739ddb6f520c1f6bf9f46a977608
-  specs:
-    ips_test_kit (0.10.1)
-      inferno_core (>= 0.4.37)
 
 PATH
   remote: .
