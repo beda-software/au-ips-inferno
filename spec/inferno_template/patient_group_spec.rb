@@ -1,4 +1,4 @@
-RSpec.describe InfernoTemplate::PatientGroup do
+RSpec.describe AUIPSInferno::PatientGroup do
   let(:suite) { Inferno::Repositories::TestSuites.new.find('inferno_template_test_suite') }
   let(:group) { suite.groups[1] }
   let(:session_data_repo) { Inferno::Repositories::SessionData.new }

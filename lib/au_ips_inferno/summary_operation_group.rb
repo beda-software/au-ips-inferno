@@ -1,5 +1,5 @@
 
-module InfernoTemplate
+module AUIPSInferno
   class SummaryOperation < Inferno::TestGroup
     title 'Summary Operation Tests'
     description %(
