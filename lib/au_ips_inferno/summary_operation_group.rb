@@ -9,7 +9,7 @@ module AUIPSInferno
     id :ips_summary_group
     run_as_group
 
-    test from: :ips_summary_operation_support_operation,
+    test from: :ips_summary_operation_support,
          config: {
            options: {
              ips_summary_operation_definition_url: 'http://hl7.org/fhir/uv/ips/OperationDefinition/summary'
@@ -19,14 +19,14 @@ module AUIPSInferno
     test from: :ips_summary_operation_return_bundle,
          config: {
            options: {
-             profile_url: 'http://hl7.org.au/fhir/ips/StructureDefinition/Bundle-au-ips'
+             ips_bundle_profile_url: 'http://hl7.org.au/fhir/ips/StructureDefinition/Bundle-au-ips'
            }
          }
 
     test from: :ips_summary_operation_valid_composition,
          config: {
            options: {
-             profile_url: 'http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips'
+             ips_composition_profile_url: 'http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-au-ips'
            }
          }
   end
