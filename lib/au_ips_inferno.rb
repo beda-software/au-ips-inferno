@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'ips_test_kit'
 require 'ipa_test_kit'
 require_relative 'au_ips_inferno/summary_operation_group'
@@ -39,7 +41,6 @@ module AUIPSInferno
 
         Please note that the DocRef tests are currently of limited scope.
       )
-
 
       input :url, title: 'IPS FHIR Server Base URL'
 

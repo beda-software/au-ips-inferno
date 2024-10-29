@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 Gem::Specification.new do |spec|
   spec.name          = 'au_ips_inferno'
   spec.version       = '0.0.1'
-  spec.authors       = ["Ilya Beda", "Pavel Rozhkov"]
+  spec.authors       = ['Ilya Beda', 'Pavel Rozhkov']
   spec.email         = ['ilya@beda.software', 'pavel.r@beda.software']
   spec.date          = Time.now.utc.strftime('%Y-%m-%d')
   spec.summary       = 'AU IPS Inferno Test Kit'
